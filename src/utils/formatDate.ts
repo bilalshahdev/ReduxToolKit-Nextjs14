@@ -1,4 +1,4 @@
-const formatDate = (date: string) => {
+const formatDate = (date: Date) => {
   const dateObject = new Date(date);
 
   if (isNaN(dateObject.getTime())) {

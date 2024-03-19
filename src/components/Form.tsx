@@ -27,13 +27,13 @@ const Form: FC<Form> = ({ data, submitData }) => {
       [name]: value,
     });
   };
-  
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     submitData({
       ...userFormData,
       id: userFormData.id || generateId(),
-      createdAt: data?.createdAt || new Date().toJSON(),
+      createdAt: data?.createdAt || new Date(),
     });
   };
   return (

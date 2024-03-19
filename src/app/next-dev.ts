@@ -6,5 +6,5 @@ interface UserI {
   city?: string;
   country?: string;
   website?: string;
-  createdAt: string;
+  createdAt: Date;
 }
