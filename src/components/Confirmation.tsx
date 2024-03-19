@@ -13,7 +13,7 @@ const Confirmation = () => {
   return (
     <>
       {confirmation.isOpen && (
-        <div className="w-full h-12 bg-white text-primary">
+        <div className="w-full h-12 bg-white text-purple-950">
           <div className="h-full flex items-center justify-start px-4">
             {confirmation.message}
           </div>

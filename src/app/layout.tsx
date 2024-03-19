@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className}   bg-gradient-to-r from-gray-900 to-primary text-white`}
+        className={`${poppins.className}   bg-gradient-to-r from-gray-900 to-purple-950 text-white`}
       >
         <ReduxProvider>
           <main>{children}</main>

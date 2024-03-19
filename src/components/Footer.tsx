@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="h-10 w-full bg-primary/85 backdrop-blur shadow border-t border-primary">
+    <footer className="h-10 w-full bg-purple-950/85 backdrop-blur shadow border-t border-purple-950">
       <p className="text-sm flex items-center justify-center gap-2 h-full">
         Made with ❤️ by
         <Link

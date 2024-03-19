@@ -19,7 +19,7 @@ const Container = ({
             {add && (
               <Link
                 href={"/users/add"}
-                className="text-sm font-semibold ml-auto px-4 py-2 bg-white hover:bg-white/80 transition-colors text-primary rounded"
+                className="text-sm font-semibold ml-auto px-4 py-2 bg-white hover:bg-white/80 transition-colors text-purple-950 rounded"
               >
                 Add user
               </Link>

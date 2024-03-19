@@ -62,7 +62,7 @@ export default function UserDetailsPage({ params }: any) {
         <Container>
           <div className="flex flex-col w-full md:max-w-md mx-auto">
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 my-8">
-              <div className="flex items-center justify-center w-20 h-20 md:w-28 md:h-28 rounded-full bg-white text-primary text-5xl md:text-[4rem] font-bold">
+              <div className="flex items-center justify-center w-20 h-20 md:w-28 md:h-28 rounded-full bg-white text-purple-950 text-5xl md:text-[4rem] font-bold">
                 {user.name[0]}
               </div>
               <div className="flex flex-col items-center md:items-start">

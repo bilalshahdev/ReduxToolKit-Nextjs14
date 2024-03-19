@@ -46,7 +46,7 @@ const Form: FC<Form> = ({ data, submitData }) => {
           type="text"
           name="name"
           placeholder="Enter your name"
-          className="w-full rounded bg-primary/50 text-white border border-secondary p-2"
+          className="w-full rounded bg-purple-950/50 text-white border border-purple-600 p-2"
           value={userFormData?.name}
           onChange={handleChange}
           required
@@ -55,7 +55,7 @@ const Form: FC<Form> = ({ data, submitData }) => {
           type="email"
           name="email"
           placeholder="Enter your email"
-          className="w-full rounded bg-primary/50 text-white border border-secondary p-2"
+          className="w-full rounded bg-purple-950/50 text-white border border-purple-600 p-2"
           value={userFormData?.email}
           onChange={handleChange}
           required
@@ -65,7 +65,7 @@ const Form: FC<Form> = ({ data, submitData }) => {
           type="text"
           name="city"
           placeholder="Enter your city"
-          className="w-full rounded bg-primary/50 text-white border border-secondary p-2"
+          className="w-full rounded bg-purple-950/50 text-white border border-purple-600 p-2"
           value={userFormData?.city}
           onChange={handleChange}
           required
@@ -74,7 +74,7 @@ const Form: FC<Form> = ({ data, submitData }) => {
           type="text"
           name="country"
           placeholder="Enter your country"
-          className="w-full rounded bg-primary/50 text-white border border-secondary p-2"
+          className="w-full rounded bg-purple-950/50 text-white border border-purple-600 p-2"
           value={userFormData?.country}
           onChange={handleChange}
           required
@@ -83,7 +83,7 @@ const Form: FC<Form> = ({ data, submitData }) => {
           type="text"
           name="website"
           placeholder="Enter your website"
-          className="w-full rounded bg-primary/50 text-white border border-secondary p-2"
+          className="w-full rounded bg-purple-950/50 text-white border border-purple-600 p-2"
           value={userFormData?.website}
           onChange={handleChange}
         />
@@ -91,7 +91,7 @@ const Form: FC<Form> = ({ data, submitData }) => {
           rows={4}
           name="bio"
           placeholder="Enter your bio"
-          className="w-full rounded bg-primary/50 text-white border border-secondary p-2"
+          className="w-full rounded bg-purple-950/50 text-white border border-purple-600 p-2"
           value={userFormData?.bio}
           onChange={handleChange}
           required
@@ -100,12 +100,12 @@ const Form: FC<Form> = ({ data, submitData }) => {
           <input
             type="submit"
             value={data ? "Update" : "Add"}
-            className="w-full rounded font-semibold bg-white hover:bg-white/80 transition-colors text-primary p-2 cursor-pointer"
+            className="w-full rounded font-semibold bg-white hover:bg-white/80 transition-colors text-purple-950 p-2 cursor-pointer"
           />
           <input
             type="button"
             value={"cancel"}
-            className="w-full rounded font-semibold bg-transparent transition-colors p-2 text-center text-white hover:text-secondary hover:bg-white/80 hover:border-transparent  border border-secondary cursor-pointer"
+            className="w-full rounded font-semibold bg-transparent transition-colors p-2 text-center text-white hover:text-purple-600 hover:bg-white/80 hover:border-transparent  border border-purple-600 cursor-pointer"
             onClick={() => router.back()}
           />
         </div>
