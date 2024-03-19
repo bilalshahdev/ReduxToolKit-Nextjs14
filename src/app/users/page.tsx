@@ -5,7 +5,7 @@ import UserCard from "@/components/UserCard";
 import Link from "next/link";
 import { useSelector } from "react-redux";
 
-const UsersPage = () => {
+export default function UsersPage() {
   const users = useSelector((store: any) => store.users);
   return (
     <Container title="users" add>
@@ -18,6 +18,4 @@ const UsersPage = () => {
       </div>
     </Container>
   );
-};
-
-export default UsersPage;
+}

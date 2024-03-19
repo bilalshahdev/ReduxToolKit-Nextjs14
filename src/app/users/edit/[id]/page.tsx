@@ -7,7 +7,7 @@ import { editUser } from "@/redux/slices/usersSlice";
 import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 
-const EditUserPage = ({ params }: any) => {
+export default function EditUserPage({ params }: any) {
   const dispatch = useDispatch();
   const router = useRouter();
   const { id } = params;
@@ -34,6 +34,4 @@ const EditUserPage = ({ params }: any) => {
       <Form data={userData} submitData={handleSubmit} />
     </Container>
   );
-};
-
-export default EditUserPage;
+}

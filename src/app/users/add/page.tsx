@@ -6,7 +6,7 @@ import { addUser } from "@/redux/slices/usersSlice";
 import { useRouter } from "next/navigation";
 import { useDispatch } from "react-redux";
 
-const AddUserPage = () => {
+export default function AddUserPage() {
   const dispatch = useDispatch();
   const router = useRouter();
   const handleSubmit = (data: UserI) => {
@@ -19,6 +19,4 @@ const AddUserPage = () => {
       <Form submitData={handleSubmit} />
     </Container>
   );
-};
-
-export default AddUserPage;
+}

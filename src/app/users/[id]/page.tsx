@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useDispatch, useSelector } from "react-redux";
 
-const page = ({ params }: any) => {
+export default function UserDetailsPage({ params }: any) {
   const dispatch = useDispatch();
   const router = useRouter();
   const { id } = params;
@@ -119,12 +119,11 @@ const page = ({ params }: any) => {
         </Container>
       ) : (
         <div className="h-[80vh] flex items-center justify-center">
-        <h6 className="h-full grid place-items-center text-gray-400 text-xl">
-          Loading...
-        </h6></div>
+          <h6 className="h-full grid place-items-center text-gray-400 text-xl">
+            Loading...
+          </h6>
+        </div>
       )}{" "}
     </>
   );
-};
-
-export default page;
+}
