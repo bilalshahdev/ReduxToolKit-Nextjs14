@@ -1,0 +1,39 @@
+name: Deploy to Ubuntu Server
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the app
+        run: npm run build
+
+      - name: Deploy to server
+        env:
+          HOST: ${{ secrets.SERVER_HOST }}
+          USERNAME: ${{ secrets.SERVER_USER }}
+          KEY: ${{ secrets.SERVER_KEY }}
+        run: |
+          ssh -i $KEY $USERNAME@$HOST << 'EOF'
+            cd /var/www/ReduxToolKit
+            git pull
+            npm install
+            npm run build
+            pm2 restart nextjs-app
+          EOF
