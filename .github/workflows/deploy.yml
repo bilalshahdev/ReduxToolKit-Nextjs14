@@ -34,7 +34,11 @@ jobs:
           echo "$KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $USERNAME@$HOST << 'EOF'
-            cd /var/www/my-nextjs-app
+            # Navigate to the app directory or clone repo if not exists
+            if [ ! -d "/var/www/node-ts-testing" ]; then
+              git clone https://github.com/bilalshahdev/ReduxToolKit-Nextjs14.git /var/www/node-ts-testing
+            fi
+            cd /var/www/node-ts-testing
             git pull
             npm install
             npm run build
