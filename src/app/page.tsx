@@ -24,7 +24,7 @@ export default function Home() {
       <p className="md:text-lg text-gray-400">
         This is a basic example that demonstrates the usage of{" "}
         <span className="text-white"> Redux-Toolkit </span>
-        with Next.js App Router.
+        with the latest Next.js App Router.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full">
         {links.map((link) => (
