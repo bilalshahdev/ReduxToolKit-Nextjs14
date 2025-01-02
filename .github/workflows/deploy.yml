@@ -34,7 +34,7 @@ jobs:
           echo "$KEY" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa $USERNAME@$HOST << 'EOF'
-            cd /var/www/ReduxToolKit-Nextjs14
+            cd /var/www/my-nextjs-app
             git pull
             npm install
             npm run build
