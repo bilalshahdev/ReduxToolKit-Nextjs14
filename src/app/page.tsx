@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="w-full max-w-screen-md flex flex-col gap-4 justify-center mx-auto h-screen px-4">
       <h1 className="text-3xl font-semibold leading-tight tracking-tight text-white md:text-5xl">
-        Redux Toolkit With Next.js 14
+        Redux Toolkit With Next.js 14 ( extended ) 
       </h1>
       <p className="md:text-lg text-gray-400">
         This is a basic example that demonstrates the usage of{" "}
